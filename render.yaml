@@ -12,9 +12,23 @@ services:
         value: llama-3.1-8b-instant
       - key: GROQ_EVAL_MODEL
         value: llama-3.1-8b-instant
+      - key: GEMINI_EMBEDDING_MODEL
+        value: gemini-embedding-001
+      - key: GEMINI_EMBEDDING_DIMENSION
+        value: 384
       - key: PINECONE_INDEX_NAME
         value: quizer-index
+      - key: PINECONE_INDEX_DIMENSION
+        value: 384
+      - key: PINECONE_METRIC
+        value: cosine
+      - key: PINECONE_CLOUD
+        value: aws
+      - key: PINECONE_REGION
+        value: us-east-1
       - key: GROQ_API_KEY
+        sync: false
+      - key: GEMINI_API_KEY
         sync: false
       - key: PINECONE_API_KEY
         sync: false

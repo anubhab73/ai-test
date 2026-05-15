@@ -1,14 +1,13 @@
 python-dotenv
 streamlit
+google-genai
 langchain
 langchain-core
 langchain-community
+langchain-text-splitters
 langchain-groq
-langchain-huggingface
 langchain-pinecone
-pinecone-client
-sentence-transformers
-torch
+pinecone
 pypdf
 tiktoken
 

@@ -10,7 +10,6 @@ import tempfile
 load_dotenv()
 
 # --- Constants (directly here) ---
-EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 GROQ_MODEL = "llama-3.1-8b-instant"
 PERSIST_DIR = "./vector_db"
 
@@ -30,7 +29,7 @@ st.markdown("""
 
 st.title("AI Quiz Taker System")
 st.markdown("### Intelligent Document-Based Quiz Generator & Evaluator")
-st.markdown("*Powered by Groq API & HuggingFace*")
+st.markdown("*Powered by Groq, Gemini Embeddings, and Pinecone*")
 
 # --- Session State ---
 if 'step' not in st.session_state:
